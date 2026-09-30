@@ -481,10 +481,15 @@ function createWindow(opts) {
     const winEl = document.createElement('div');
     winEl.className = 'xp-window opening';
     winEl.id = id;
-    winEl.style.width = (opts.width || 600) + 'px';
-    winEl.style.height = (opts.height || 400) + 'px';
-    winEl.style.left = offsetX + 'px';
-    winEl.style.top = offsetY + 'px';
+    const w = Math.min(opts.width || 600, window.innerWidth - 20);
+    const h = Math.min(opts.height || 400, window.innerHeight - 60);
+    winEl.style.width = w + 'px';
+    winEl.style.height = h + 'px';
+    
+    const maxLeft = Math.max(10, window.innerWidth - w - 10);
+    const maxTop = Math.max(10, window.innerHeight - h - 50);
+    winEl.style.left = Math.min(offsetX, maxLeft) + 'px';
+    winEl.style.top = Math.min(offsetY, maxTop) + 'px';
     winEl.style.zIndex = ++topZIndex;
 
     let toolbarHTML = '';
