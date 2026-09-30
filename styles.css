@@ -2109,4 +2109,15 @@ html, body {
     .tb-quick-launch {
         gap: 2px;
     }
+
+    .welcome-body {
+        flex-direction: column;
+        gap: 40px;
+        justify-content: flex-start;
+        padding-top: 15vh;
+    }
+
+    .welcome-left, .welcome-right {
+        text-align: center;
+    }
 }
