@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grovix - Digital Solutions Portfolio</title>
+    <meta name="description" content="Grovix - Leading digital solutions company offering web development, mobile apps, UI/UX design, cloud solutions, and AI services.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ========== BOOT SCREEN ========== -->
+    <div id="boot-screen">
+        <div class="boot-content">
+            <div class="xp-logo-area">
+                <div class="windows-flag">
+                    <div class="flag-row">
+                        <div class="flag-piece red"></div>
+                        <div class="flag-piece green"></div>
+                    </div>
+                    <div class="flag-row">
+                        <div class="flag-piece blue"></div>
+                        <div class="flag-piece yellow"></div>
+                    </div>
+                </div>
+                <div class="xp-text-area">
+                    <span class="ms-text">Microsoft</span>
+                    <span class="winxp-text">Windows<sup class="xp-sup">XP</sup></span>
+                </div>
+            </div>
+            <div class="boot-loader">
+                <div class="loader-track">
+                    <div class="loader-blocks">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="boot-bottom">
+            <span class="boot-edition">Professional</span>
+            <span class="boot-copyright">Copyright © Grovix Digital Solutions</span>
+        </div>
+    </div>
+
+    <!-- ========== WELCOME SCREEN ========== -->
+    <div id="welcome-screen">
+        <div class="welcome-top-bar"></div>
+        <div class="welcome-body">
+            <div class="welcome-left">
+                <h1 class="welcome-title">Welcome</h1>
+            </div>
+            <div class="welcome-center">
+                <div class="welcome-user" id="welcome-user-btn">
+                    <div class="welcome-avatar">
+                        <svg viewBox="0 0 48 48" width="48" height="48">
+                            <circle cx="24" cy="18" r="10" fill="#4a7ebb"/>
+                            <ellipse cx="24" cy="42" rx="16" ry="12" fill="#4a7ebb"/>
+                        </svg>
+                    </div>
+                    <span class="welcome-username">Grovix User</span>
+                </div>
+            </div>
+            <div class="welcome-right">
+                <p class="welcome-hint">Click your name to begin</p>
+            </div>
+        </div>
+        <div class="welcome-bottom-bar">
+            <div class="welcome-shutdown">
+                <span>Turn off computer</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== DESKTOP ========== -->
+    <div id="desktop">
+        <!-- Desktop Icons Container -->
+        <div id="desktop-icons"></div>
+
+        <!-- Windows will be injected here -->
+        <div id="windows-container"></div>
+
+        <!-- Right-click Context Menu -->
+        <div id="context-menu">
+            <div class="ctx-item" data-action="refresh">
+                <span>Refresh</span>
+            </div>
+            <div class="ctx-separator"></div>
+            <div class="ctx-item" data-action="arrange-name">
+                <span>Arrange Icons By Name</span>
+            </div>
+            <div class="ctx-item" data-action="arrange-type">
+                <span>Arrange Icons By Type</span>
+            </div>
+            <div class="ctx-separator"></div>
+            <div class="ctx-item" data-action="new-folder">
+                <span>New Folder</span>
+            </div>
+            <div class="ctx-separator"></div>
+            <div class="ctx-item" data-action="properties">
+                <span>Properties</span>
+            </div>
+        </div>
+
+        <!-- ========== START MENU ========== -->
+        <div id="start-menu">
+            <div class="sm-header">
+                <div class="sm-user-avatar">
+                    <svg viewBox="0 0 48 48" width="40" height="40">
+                        <circle cx="24" cy="18" r="10" fill="#fff"/>
+                        <ellipse cx="24" cy="42" rx="16" ry="12" fill="#fff"/>
+                    </svg>
+                </div>
+                <span class="sm-user-name">Grovix</span>
+            </div>
+            <div class="sm-body">
+                <div class="sm-left">
+                    <div class="sm-section-label">Pinned Programs</div>
+                    <div class="sm-item" data-window="about">
+                        <div class="sm-icon">ℹ️</div>
+                        <div class="sm-item-text">
+                            <span class="sm-item-title">About Grovix</span>
+                            <span class="sm-item-desc">Learn about our company</span>
+                        </div>
+                    </div>
+                    <div class="sm-item" data-window="team">
+                        <div class="sm-icon">👥</div>
+                        <div class="sm-item-text">
+                            <span class="sm-item-title">Our Team</span>
+                            <span class="sm-item-desc">Meet the people behind Grovix</span>
+                        </div>
+                    </div>
+                    <div class="sm-item" data-window="contact">
+                        <div class="sm-icon">📧</div>
+                        <div class="sm-item-text">
+                            <span class="sm-item-title">Contact Us</span>
+                            <span class="sm-item-desc">Get in touch with us</span>
+                        </div>
+                    </div>
+                    <div class="sm-item" data-window="testimonials">
+                        <div class="sm-icon">⭐</div>
+                        <div class="sm-item-text">
+                            <span class="sm-item-title">Testimonials</span>
+                            <span class="sm-item-desc">What our clients say</span>
+                        </div>
+                    </div>
+                    <div class="sm-divider"></div>
+                    <div class="sm-section-label">All Programs</div>
+                    <div class="sm-item" data-window="blog">
+                        <div class="sm-icon">📝</div>
+                        <div class="sm-item-text">
+                            <span class="sm-item-title">Blog</span>
+                            <span class="sm-item-desc">Industry insights & updates</span>
+                        </div>
+                    </div>
+                    <div class="sm-item" data-window="careers">
+                        <div class="sm-icon">💼</div>
+                        <div class="sm-item-text">
+                            <span class="sm-item-title">Careers</span>
+                            <span class="sm-item-desc">Join our team</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-right">
+                    <div class="sm-item sm-right-item" data-window="my-computer">
+                        <div class="sm-icon">🖥️</div>
+                        <span class="sm-item-title">My Computer</span>
+                    </div>
+                    <div class="sm-item sm-right-item" data-window="portfolio">
+                        <div class="sm-icon">📂</div>
+                        <span class="sm-item-title">My Portfolio</span>
+                    </div>
+                    <div class="sm-item sm-right-item" data-window="services-overview">
+                        <div class="sm-icon">⚙️</div>
+                        <span class="sm-item-title">Control Panel</span>
+                    </div>
+                    <div class="sm-right-divider"></div>
+                    <div class="sm-item sm-right-item" data-action="help">
+                        <div class="sm-icon">❓</div>
+                        <span class="sm-item-title">Help & Support</span>
+                    </div>
+                    <div class="sm-item sm-right-item" data-action="run">
+                        <div class="sm-icon">▶️</div>
+                        <span class="sm-item-title">Run...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sm-footer">
+                <button class="sm-footer-btn" id="btn-logoff">
+                    <span class="sm-footer-icon">🔒</span> Log Off
+                </button>
+                <button class="sm-footer-btn" id="btn-shutdown">
+                    <span class="sm-footer-icon">⏻</span> Shut Down
+                </button>
+            </div>
+        </div>
+
+        <!-- ========== TASKBAR ========== -->
+        <div id="taskbar">
+            <button id="start-button">
+                <div class="start-logo">
+                    <div class="sl-row">
+                        <div class="sl-piece sl-red"></div>
+                        <div class="sl-piece sl-green"></div>
+                    </div>
+                    <div class="sl-row">
+                        <div class="sl-piece sl-blue"></div>
+                        <div class="sl-piece sl-yellow"></div>
+                    </div>
+                </div>
+                <span class="start-text">start</span>
+            </button>
+            <div class="tb-quick-launch">
+                <div class="tb-ql-item" title="Show Desktop" id="ql-desktop">🖥️</div>
+                <div class="tb-ql-item" title="Internet Explorer" id="ql-ie">🌐</div>
+                <div class="tb-ql-item" title="Email" id="ql-email">📧</div>
+            </div>
+            <div class="tb-divider"></div>
+            <div id="taskbar-windows"></div>
+            <div id="system-tray">
+                <div class="tray-icons">
+                    <span class="tray-icon" title="Volume">🔊</span>
+                    <span class="tray-icon" title="Network">📶</span>
+                    <span class="tray-icon" title="Security">🛡️</span>
+                </div>
+                <div id="taskbar-clock">
+                    <span id="clock-time"></span>
+                    <span id="clock-date"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== SHUTDOWN SCREEN ========== -->
+    <div id="shutdown-screen">
+        <div class="shutdown-content">
+            <div class="shutdown-text">Windows is shutting down...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
